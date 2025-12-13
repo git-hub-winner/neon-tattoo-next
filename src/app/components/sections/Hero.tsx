@@ -92,10 +92,18 @@ export const Hero = () => {
 
       <div className="absolute top-4 right-4 z-20">
         <div className="flex items-center gap-6">
-          <button className="heroSwiper-button-prev flex items-center justify-center rounded-full border border-white/10 bg-white/20 p-2 shadow-lg shadow-black/20 backdrop-blur-md transition hover:bg-white/30">
+          <button
+            type="button"
+            aria-label="Previous slide"
+            className="heroSwiper-button-prev flex cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/20 p-2 shadow-lg shadow-black/20 backdrop-blur-md transition hover:bg-white/30"
+          >
             <ChevronLeft className="size-6 text-white" />
           </button>
-          <button className="heroSwiper-button-next flex items-center justify-center rounded-full border border-white/10 bg-white/20 p-2 shadow-lg shadow-black/20 backdrop-blur-md transition hover:bg-white/30">
+          <button
+            type="button"
+            aria-label="Next slide"
+            className="heroSwiper-button-next flex cursor-pointer items-center justify-center rounded-full border border-white/10 bg-white/20 p-2 shadow-lg shadow-black/20 backdrop-blur-md transition hover:bg-white/30"
+          >
             <ChevronRight className="size-6 text-white" />
           </button>
         </div>

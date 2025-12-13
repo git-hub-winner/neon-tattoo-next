@@ -1,27 +1,28 @@
 "use client";
 
-import { Link } from "react-scroll";
-
 import { cn } from "@/lib/utils";
 
 type Props = {
   to: string;
   text: string;
   className?: string;
+  icon?: React.ReactNode;
 };
 
-export const CustomNavLink = ({ to, text, className }: Props) => {
+export const CustomNavLink = ({ to, text, className, icon }: Props) => {
   return (
-    <Link
-      to={to}
-      spy={true}
-      smooth={true}
-      duration={500}
-      offset={-80}
-      activeClass="text-primary"
-      className={cn("cursor-pointer transition-colors", className)}
+    <a
+      href={`#${to}`}
+      className={cn("hover:text-primary cursor-pointer transition-colors", className)}
+      onClick={e => {
+        e.preventDefault();
+        document.getElementById(to)?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }}
     >
       {text}
-    </Link>
+      {icon}
+    </a>
   );
 };

@@ -6,7 +6,7 @@ import { baseMetadata } from "@/lib/seo/seo-seed";
 export const homePageSeo: Metadata = {
   ...baseMetadata,
 
-  title: "NeonTattoo Студия Тату",
+  title: "NeonTattoo Studio профессиональная тату-студия в Кишинёве.",
   description:
     "NeonTattoo Studio профессиональная тату-студия в Кишинёве. Тату, пирсинг, обучение.",
 

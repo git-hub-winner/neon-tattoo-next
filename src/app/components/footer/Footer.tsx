@@ -1,3 +1,11 @@
 export const Footer = () => {
-  return <footer>Footer</footer>;
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-gray-100 py-10">
+      <p className="text-center text-sm font-semibold">
+        &copy; {currentYear} NeonTattoo. All rights reserved.
+      </p>
+    </footer>
+  );
 };

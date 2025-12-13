@@ -3,11 +3,11 @@ import { CustomNavLink } from "../../ui/CustomNavLink";
 export const Navigation = () => {
   return (
     <nav className="hidden items-center gap-6 md:flex lg:gap-15">
-      <CustomNavLink to="home" text="О нас" />
-      <CustomNavLink to="home" text="Услуги" />
-      <CustomNavLink to="home" text="Портфолио" />
-      <CustomNavLink to="home" text="Пакеты" />
-      <CustomNavLink to="home" text="Контакты" />
+      <CustomNavLink to="about" text="О нас" />
+      <CustomNavLink to="services" text="Услуги" />
+      <CustomNavLink to="portfolio" text="Портфолио" />
+      <CustomNavLink to="packages" text="Пакеты" />
+      <CustomNavLink to="contacts" text="Контакты" />
     </nav>
   );
 };
