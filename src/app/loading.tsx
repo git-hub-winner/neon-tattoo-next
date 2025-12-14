@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
-
 export default function Loading() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center p-8">
@@ -13,17 +11,15 @@ export default function Loading() {
             width={64}
             height={64}
             src="/logo.svg"
-            alt="NeonTattoo"
+            alt="Neon Tattoo тату студия в Кишинёве"
             className="h-full w-full animate-pulse rounded-full object-contain"
           />
         </div>
       </div>
 
-      <Button>sss</Button>
-
       <div className="mt-16 text-center">
         <h3 className="mb-2 text-2xl font-bold text-gray-800">Создаём ваш эскиз...</h3>
-        <p className="text-gray-500">Студия NeonTattoo</p>
+        <p className="text-gray-500">Студия Neon Tattoo</p>
       </div>
     </div>
   );

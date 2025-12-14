@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Roboto, Sedgwick_Ave_Display } from "next/font/google";
 import Script from "next/script";
 
-import { neonTattooJsonLd } from "../lib/seo/jsonld";
+import { NeonTattooJsonLd } from "../lib/seo/jsonld";
 import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import { homePageSeo } from "./seo/home";
@@ -29,7 +29,7 @@ const roboto = Roboto({
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html lang="ru">
+    <html lang="ru" className="scroll-smooth">
       <body className={`${roboto.variable} ${sedwick.variable} roboto antialiased`}>
         <Header />
 
@@ -38,7 +38,7 @@ export default function RootLayout({ children }: Props) {
         <Footer />
 
         <Script id="layout-jsonld" type="application/ld+json" strategy="beforeInteractive">
-          {JSON.stringify(neonTattooJsonLd)}
+          {JSON.stringify(NeonTattooJsonLd)}
         </Script>
       </body>
     </html>

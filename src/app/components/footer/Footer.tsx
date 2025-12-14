@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className="bg-gray-100 py-10">
       <p className="text-center text-sm font-semibold">
-        &copy; {currentYear} NeonTattoo. All rights reserved.
+        &copy; {currentYear} Neon Tattoo. All rights reserved.
       </p>
     </footer>
   );

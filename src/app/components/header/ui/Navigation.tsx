@@ -1,13 +1,29 @@
+"use client";
+
+import { useActiveSection } from "@/lib/useActiveSection";
+
 import { CustomNavLink } from "../../ui/CustomNavLink";
 
+const links = [
+  { to: "about", text: "О нас" },
+  { to: "services", text: "Услуги" },
+  { to: "portfolio", text: "Портфолио" },
+  { to: "packages", text: "Пакеты" },
+  { to: "course", text: "Курсы тату" },
+  { to: "contacts", text: "Контакты" },
+] as const;
+
 export const Navigation = () => {
+  const active = useActiveSection(
+    links.map(l => l.to),
+    { headerPx: 96 }
+  );
+
   return (
     <nav className="hidden items-center gap-6 md:flex lg:gap-15">
-      <CustomNavLink to="about" text="О нас" />
-      <CustomNavLink to="services" text="Услуги" />
-      <CustomNavLink to="portfolio" text="Портфолио" />
-      <CustomNavLink to="packages" text="Пакеты" />
-      <CustomNavLink to="contacts" text="Контакты" />
+      {links.map(l => (
+        <CustomNavLink key={l.to} to={l.to} text={l.text} isActive={active === l.to} />
+      ))}
     </nav>
   );
 };

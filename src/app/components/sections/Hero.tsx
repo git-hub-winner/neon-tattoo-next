@@ -32,16 +32,16 @@ export const Hero = () => {
         <SwiperSlide className="relative min-h-[calc(100dvh-96px)]">
           <div className="absolute inset-0 z-10 bg-black/40"></div>
           <Image
-            src="/images/hero1.jpg"
+            src="/images/hero-neon-tattoo-studio-1.webp"
             fill
             priority
             className="h-full w-full object-cover"
-            alt="Тату-мастер наносит татуировку в студии NeonTattoo"
+            alt="Мужчина с тату рукавами"
           />
-          <div className="absolute top-1/2 left-1/2 z-20 -translate-x-1/2 -translate-y-1/2 text-white">
+          <div className="absolute top-1/2 left-1/2 z-20 w-full -translate-x-1/2 -translate-y-1/2 text-white">
             <div className="flex flex-col gap-10">
-              <p className="sedwick text-center text-5xl sm:text-7xl">NeonTattoo</p>
-              <div className="flex flex-col gap-4 text-center tracking-widest uppercase">
+              <p className="sedwick text-center text-5xl sm:text-7xl">Neon Tattoo</p>
+              <div className="flex flex-col gap-4 px-4 text-center tracking-widest uppercase">
                 <h2>профессиональная тату студия в кишинёве</h2>
                 <h2>индивидуальные тату эскизы</h2>
               </div>
@@ -52,17 +52,17 @@ export const Hero = () => {
         <SwiperSlide className="relative min-h-[calc(100dvh-96px)]">
           <div className="absolute inset-0 z-10 bg-black/40"></div>
           <Image
-            src="/images/hero2.jpg"
+            src="/images/hero-neon-tattoo-studio-2.webp"
             fill
             className="h-full w-full object-cover"
-            alt="Авторская татуировка в тату-студии NeonTattoo Кишинёв"
+            alt="Мужчина с тату на правой руке"
           />
-          <div className="absolute top-1/2 left-1/2 z-20 -translate-x-1/2 -translate-y-1/2 text-white">
+          <div className="absolute top-1/2 left-1/2 z-20 w-full -translate-x-1/2 -translate-y-1/2 text-white">
             <div className="flex flex-col gap-10">
-              <p className="sedwick text-center text-5xl sm:text-7xl">NeonTattoo</p>
-              <div className="flex flex-col gap-4 text-center tracking-widest uppercase">
-                <h2>профессиональная тату студия в кишинёве</h2>
-                <h2>индивидуальные тату эскизы</h2>
+              <p className="sedwick text-center text-5xl sm:text-7xl">Neon Tattoo</p>
+              <div className="flex flex-col gap-4 px-4 text-center tracking-widest uppercase">
+                <h2>Перманентный макияж</h2>
+                <p>С точным подбором формы и оттенка</p>
               </div>
             </div>
           </div>
@@ -71,17 +71,17 @@ export const Hero = () => {
         <SwiperSlide className="relative min-h-[calc(100dvh-96px)]">
           <div className="absolute inset-0 z-10 bg-black/40"></div>
           <Image
-            src="/images/hero3.jpg"
+            src="/images/hero-neon-tattoo-studio-3.webp"
             fill
             className="h-full w-full object-cover"
-            alt="Эскизы и профессиональные тату в студии NeonTattoo"
+            alt="Мужчина с тату на плечами"
           />
-          <div className="absolute top-1/2 left-1/2 z-20 -translate-x-1/2 -translate-y-1/2 text-white">
+          <div className="absolute top-1/2 left-1/2 z-20 w-full -translate-x-1/2 -translate-y-1/2 text-white">
             <div className="flex flex-col gap-10">
-              <p className="sedwick text-center text-5xl sm:text-7xl">NeonTattoo</p>
-              <div className="flex flex-col gap-4 text-center tracking-widest uppercase">
-                <h2>профессиональная тату студия в кишинёве</h2>
-                <h2>индивидуальные тату эскизы</h2>
+              <p className="sedwick text-center text-5xl sm:text-7xl">Neon Tattoo</p>
+              <div className="flex flex-col gap-4 px-4 text-center tracking-widest uppercase">
+                <h2>Пирсинг в кишинёве</h2>
+                <p>Профессиональный подход и внимание к деталям</p>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 {
-  "name": "NeonTattoo",
-  "short_name": "NeonTattoo",
+  "name": "Neon Tattoo",
+  "short_name": "Neon Tattoo",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#09130a",
+  "background_color": "#09130a",
   "display": "standalone"
 }

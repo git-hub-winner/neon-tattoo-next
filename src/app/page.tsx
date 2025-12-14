@@ -1,5 +1,6 @@
 import { About } from "./components/sections/About";
 import { Contacts } from "./components/sections/Contacts";
+import { Course } from "./components/sections/Course";
 import { Hero } from "./components/sections/Hero";
 import { Packages } from "./components/sections/Packages";
 import { Portfolio } from "./components/sections/Portfolio";
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Services />
       <Portfolio />
       <Packages />
+      <Course />
       <Contacts />
     </>
   );

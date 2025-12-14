@@ -1,3 +1,5 @@
+import { MessageCircle, PhoneCall } from "lucide-react";
+
 type PackageCardProps = {
   price: number;
   title: string;
@@ -6,32 +8,45 @@ type PackageCardProps = {
 
 export const PackageCard = ({ price, title, service }: PackageCardProps) => {
   return (
-    <div className="flex flex-col">
-      <div className="bg-primary py-10 text-center text-white">
-        <p className="text-5xl">${price}</p>
-      </div>
-      <div className="bg-teal-600 py-2 text-center text-white uppercase">
-        <p className="uppercase">{title}</p>
-      </div>
-      <div className="border-x px-4 py-6">
-        {service.map((item, index) => (
-          <div key={index} className="flex flex-col">
-            <h3 className="py-2 text-center">{item}</h3>
-            <div
-              className={`h-px w-full bg-gray-100 ${index === service.length - 1 && "mb-6"}`}
-            ></div>
-          </div>
-        ))}
+    <div className="hover:border-primary flex flex-col rounded-lg border border-gray-200 transition-colors duration-300">
+      <div className="overflow-hidden rounded-t-lg bg-linear-to-r from-teal-50 to-blue-50 py-8 text-center">
+        <p className="text-4xl font-bold text-gray-800">от {price} лей</p>
       </div>
 
-      <a
-        href="#"
-        className="bg-black p-2 text-center font-semibold text-white uppercase"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        Book now!
-      </a>
+      <div className="border-b px-6 py-4">
+        <h3 className="text-center text-xl font-semibold text-gray-800">{title}</h3>
+      </div>
+
+      <div className="grow px-6 py-6">
+        <ul className="space-y-3">
+          {service.map((item, index) => (
+            <li key={index} className="flex items-center">
+              <div className="bg-primary mr-3 h-2 w-2 rounded-full"></div>
+              <h3>{item}</h3>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="space-y-3 px-6 pb-6">
+        <a
+          href="https://t.me/Trinkonfox"
+          className="border-primary text-primary inline-flex w-full items-center justify-center gap-2 rounded-lg border bg-white px-4 py-3 font-medium"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <MessageCircle className="size-5" />
+          Telegram
+        </a>
+
+        <a
+          href="tel:+37379146506"
+          className="bg-primary inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-3 font-medium text-white"
+        >
+          <PhoneCall className="size-5" />
+          +37379146506
+        </a>
+      </div>
     </div>
   );
 };

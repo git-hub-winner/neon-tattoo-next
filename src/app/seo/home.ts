@@ -6,30 +6,30 @@ import { baseMetadata } from "@/lib/seo/seo-seed";
 export const homePageSeo: Metadata = {
   ...baseMetadata,
 
-  title: "NeonTattoo Studio профессиональная тату-студия в Кишинёве.",
+  title: "Neon Tattoo Studio профессиональная тату-студия в Кишинёве.",
   description:
-    "NeonTattoo Studio профессиональная тату-студия в Кишинёве. Тату, пирсинг, обучение.",
+    "Neon Tattoo Studio профессиональная тату-студия в Кишинёве. Тату, пирсинг, обучение.",
 
   openGraph: {
     ...baseMetadata.openGraph,
-    title: "NeonTattoo Студия Тату и Пирсинг в Кишинёве",
+    title: "Neon Tattoo Студия Тату и Пирсинг в Кишинёве",
     description:
-      "Профессиональная тату-студия NeonTattoo. Индивидуальные эскизы, качественная работа.",
+      "Профессиональная тату-студия Neon Tattoo. Индивидуальные эскизы, качественная работа.",
     url: BASE_URL,
     images: [
       {
         url: `${BASE_URL}/logo.svg`,
         width: 1200,
         height: 630,
-        alt: "NeonTattoo Studio Главная страница",
+        alt: "Neon Tattoo Studio Главная страница",
       },
     ],
   },
 
   twitter: {
     ...baseMetadata.twitter,
-    title: "NeonTattoo Тату-студия в Кишинёве",
-    description: "Современная и профессиональная тату-студия NeonTattoo.",
+    title: "Neon Tattoo Тату-студия в Кишинёве",
+    description: "Современная и профессиональная тату-студия Neon Tattoo.",
     images: [`${BASE_URL}/logo.svg`],
   },
 

@@ -6,55 +6,39 @@ export const baseMetadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
   title: {
-    default: "NeonTattoo тату-студия",
-    template: "%s | NeonTattoo тату-студия",
+    default: "Neon Tattoo тату-студия в Кишинёве (Atrium)",
+    template: "%s | Neon Tattoo",
   },
 
   description:
-    "NeonTattoo профессиональная тату-студия в Кишинёве. Тату, пирсинг, курсы татуировки.",
+    "Neon Tattoo тату-студия в Кишинёве (ТЦ Atrium, ул. Албишоара 4). Татуировки, пирсинг, перманентный макияж. Работаем по предварительной записи.",
+
+  alternates: {
+    canonical: BASE_URL,
+  },
 
   openGraph: {
     type: "website",
-    siteName: "NeonTattoo",
-    title: "NeonTattoo тату-студия",
+    url: BASE_URL,
+    siteName: "Neon Tattoo",
+    title: "Neon Tattoo тату-студия в Кишинёве (Atrium)",
     description:
-      "Профессиональная тату-студия в Кишинёве. Индивидуальные эскизы, качественная работа.",
+      "Тату-студия в Кишинёве: ТЦ Atrium, ул. Албишоара 4. Татуировки, пирсинг, перманентный макияж. По предварительной записи.",
+    locale: "ru_MD",
     images: [
       {
         url: `${BASE_URL}/logo.svg`,
         width: 1200,
         height: 630,
-        alt: "NeonTattoo тату-студия",
+        alt: "Neon Tattoo тату-студия в Кишинёве (Atrium)",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "NeonTattoo Студия",
-    description: "Профессиональная тату-студия в Кишинёве.",
+    title: "Neon Tattoo тату-студия в Кишинёве (Atrium)",
+    description: "ТЦ Atrium, ул. Албишоара 4. Татуировки, пирсинг, перманентный макияж. По записи.",
     images: [`${BASE_URL}/logo.svg`],
   },
-
-  alternates: {
-    canonical: BASE_URL,
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
-
-  keywords: [
-    "тату Кишинёв",
-    "тату студия",
-    "тату салон",
-    "пирсинг Кишинёв",
-    "NeonTattoo",
-    "курсы татуировки",
-  ],
 };

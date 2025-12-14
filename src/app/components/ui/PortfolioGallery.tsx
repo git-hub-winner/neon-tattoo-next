@@ -45,14 +45,14 @@ export default function PortfolioGallery({ galleryID, images, className }: Props
           data-pswp-height={image.height}
           target="_blank"
           rel="noreferrer"
-          className="block overflow-hidden"
+          className="relative block min-h-[650px] overflow-hidden"
         >
           <Image
             src={image.url}
             alt={image.alt}
-            width={720}
-            height={720}
-            className="h-auto w-full object-cover"
+            fill
+            sizes="(min-width: 1536px) 25vw, (min-width: 768px) 50vw, 100vw"
+            className="aspect-3/4 object-cover"
           />
         </a>
       ))}
