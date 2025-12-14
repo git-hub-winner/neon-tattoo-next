@@ -40,6 +40,17 @@ export default function RootLayout({ children }: Props) {
         <Script id="layout-jsonld" type="application/ld+json" strategy="beforeInteractive">
           {JSON.stringify(NeonTattooJsonLd)}
         </Script>
+
+        <Script id="ga4" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-HHWR71217Q', {
+              anonymize_ip: true
+            });
+          `}
+        </Script>
       </body>
     </html>
   );
