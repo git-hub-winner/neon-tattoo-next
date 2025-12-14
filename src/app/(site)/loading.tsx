@@ -19,7 +19,7 @@ export default function Loading() {
 
       <div className="mt-16 text-center">
         <h3 className="mb-2 text-2xl font-bold text-gray-800">Создаём ваш эскиз...</h3>
-        <p className="text-gray-500">Студия Neon Tattoo</p>
+        <p className="text-gray-500">Студия Neon Tattoo в Кишинёве</p>
       </div>
     </div>
   );

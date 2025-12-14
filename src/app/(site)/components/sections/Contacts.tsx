@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
-const Map = dynamic(() => import("@/app/components/ui/Map"), {
+const Map = dynamic(() => import("@/app/(site)/components/ui/Map"), {
   loading: () => <p>Загрузка карты...</p>,
 });
 
@@ -23,7 +23,7 @@ export const Contacts = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-6 text-center">
-          <h1 className="text-xs tracking-widest uppercase">Индивидуальные тату только у нас</h1>
+          <h2 className="text-xs tracking-widest uppercase">Индивидуальные тату только у нас</h2>
           <p className="text-4xl font-semibold uppercase md:text-6xl">Как нас найти</p>
         </div>
       </div>

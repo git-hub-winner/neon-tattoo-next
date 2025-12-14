@@ -1,17 +1,18 @@
 "use client";
 import Link from "next/link";
-import { Button } from "../components/ui/button";
+
+import { Button } from "@/components/ui/button";
 
 export default function Error({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="flex min-h-screen items-center justify-center bg-black p-8 text-white">
       <div className="max-w-md space-y-8 text-center">
         <div>
-          <h1 className="mb-4 text-5xl font-bold">
+          <p className="mb-4 text-5xl font-bold">
             <span className="bg-linear-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
               Ошибка!
             </span>
-          </h1>
+          </p>
           <p className="mb-6 text-gray-400">Что-то пошло не так во время загрузки страницы</p>
           {error.message && (
             <div className="mb-6 rounded-lg bg-gray-900/50 p-4 text-left">

@@ -5,37 +5,26 @@ import { Roboto, Sedgwick_Ave_Display } from "next/font/google";
 import Script from "next/script";
 
 import { NeonTattooJsonLd } from "../lib/seo/jsonld";
-import { Footer } from "./components/footer/Footer";
-import { Header } from "./components/header/Header";
-import { homePageSeo } from "./seo/home";
+import { homePageSeo } from "./(site)/seo/home";
 
 export const metadata: Metadata = homePageSeo;
-
-type Props = {
-  children: React.ReactNode;
-};
 
 const sedwick = Sedgwick_Ave_Display({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-sedwick",
 });
-
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   variable: "--font-roboto",
 });
 
-export default function RootLayout({ children }: Props) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ru" className="scroll-smooth">
       <body className={`${roboto.variable} ${sedwick.variable} roboto antialiased`}>
-        <Header />
-
-        <main className="min-h-screen">{children}</main>
-
-        <Footer />
+        {children}
 
         <Script id="layout-jsonld" type="application/ld+json" strategy="beforeInteractive">
           {JSON.stringify(NeonTattooJsonLd)}
@@ -46,9 +35,7 @@ export default function RootLayout({ children }: Props) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-HHWR71217Q', {
-              anonymize_ip: true
-            });
+            gtag('config', 'G-HHWR71217Q', { anonymize_ip: true });
           `}
         </Script>
       </body>
