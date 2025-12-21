@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Course = () => {
   return (
-    <section id="course" className="pb-10 md:pb-15">
+    <section id="course" className="scroll-m-20 pb-10 md:pb-15">
       <div className="container flex flex-col gap-10">
         <div className="relative mx-auto h-[55px] w-full max-w-[350px]">
           <Image
