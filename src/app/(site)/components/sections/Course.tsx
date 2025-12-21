@@ -41,7 +41,7 @@ export const Course = () => {
               <ul className="flex flex-col gap-2">
                 <li className="flex items-center gap-2">
                   <Check className="text-primary size-6 shrink-0" />
-                  <span>Практика с первого дня — все уроки выполняются на живых моделях</span>
+                  <span>Практика с первого дня все уроки выполняются на живых моделях</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="text-primary size-6 shrink-0" />

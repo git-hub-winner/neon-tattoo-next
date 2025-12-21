@@ -6,34 +6,49 @@ import { baseMetadata } from "@/lib/seo/seo-seed";
 export const homePageSeo: Metadata = {
   ...baseMetadata,
 
-  title: "Neon Tattoo Studio профессиональная тату-студия в Кишинёве.",
+  title: "Neon Tattoo | Тату-студия в Кишинёве Татуировки, Пирсинг, Перманентный Макияж",
+
   description:
-    "Neon Tattoo Studio профессиональная тату-студия в Кишинёве. Тату, пирсинг, обучение.",
+    "Профессиональная тату-студия Neon Tattoo в Кишинёве (ТЦ Atrium, ул. Албишоара 4). Индивидуальные эскизы, художественные татуировки, пирсинг, перманентный макияж. Стерильность, опытные мастера, современное оборудование. Запись: +373 79 146 506",
+
+  keywords: [
+    "тату студия Кишинёв",
+    "татуировка Кишинёв",
+    "пирсинг Кишинёв",
+    "перманентный макияж Кишинёв",
+  ],
+
+  alternates: {
+    canonical: `${BASE_URL}/`,
+  },
 
   openGraph: {
-    ...baseMetadata.openGraph,
-    title: "Neon Tattoo Студия Тату и Пирсинг в Кишинёве",
+    type: "website",
+    url: `${BASE_URL}/`,
+    siteName: "Neon Tattoo",
+    title: "Neon Tattoo | Профессиональная Тату-студия в Кишинёве",
     description:
-      "Профессиональная тату-студия Neon Tattoo. Индивидуальные эскизы, качественная работа.",
-    url: BASE_URL,
+      "Художественные татуировки, пирсинг и перманентный макияж в центре Кишинёва. ТЦ Atrium, ул. Албишоара 4. Опытные мастера, индивидуальный подход, стерильность. Запись онлайн!",
+    locale: "ru_MD",
     images: [
       {
-        url: `${BASE_URL}/logo.svg`,
+        url: `${BASE_URL}/og_image.png`,
         width: 1200,
         height: 630,
-        alt: "Neon Tattoo Studio Главная страница",
+        alt: "Neon Tattoo Studio Тату-студия в Кишинёве | Татуировки, Пирсинг, Перманентный Макияж",
+        type: "image/png",
       },
     ],
   },
 
   twitter: {
-    ...baseMetadata.twitter,
-    title: "Neon Tattoo Тату-студия в Кишинёве",
-    description: "Современная и профессиональная тату-студия Neon Tattoo.",
-    images: [`${BASE_URL}/logo.svg`],
-  },
-
-  alternates: {
-    canonical: BASE_URL,
+    card: "summary_large_image",
+    title: "Neon Tattoo | Тату-студия в Кишинёве Татуировки & Пирсинг",
+    description:
+      "Профессиональные татуировки в Кишинёве. ТЦ Atrium, ул. Албишоара 4. Индивидуальные эскизы, пирсинг, перманентный макияж. Запись: +373 79 146 506",
+    images: {
+      url: `${BASE_URL}/og_image.png`,
+      alt: "Neon Tattoo Studio Тату-студия в Кишинёве",
+    },
   },
 };

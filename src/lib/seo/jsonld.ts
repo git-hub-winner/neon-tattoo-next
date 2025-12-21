@@ -8,7 +8,7 @@ export const NeonTattooJsonLd = {
   name: "Neon Tattoo",
   description:
     "Neon Tattoo профессиональная тату-студия в Кишинёве. Индивидуальные эскизы, татуировки, пирсинг и перманентный макияж. Работаем по предварительной записи.",
-  image: [`${BASE_URL}/logo.svg`, `${BASE_URL}/images/portfolio1.webp`],
+  image: [`${BASE_URL}/logo.svg`],
   telephone: "+37379146506",
   priceRange: "MDL",
   address: {
