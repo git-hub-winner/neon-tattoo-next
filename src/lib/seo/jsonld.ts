@@ -37,7 +37,7 @@ export const NeonTattooJsonLd = {
       closes: "18:00",
     },
   ],
-  sameAs: ["https://www.instagram.com/TrinkoTattoo"],
+  sameAs: ["https://instagram.com/trinko_tattoo"],
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+37379146506",

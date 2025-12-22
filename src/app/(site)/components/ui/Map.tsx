@@ -67,7 +67,7 @@ export default function AtriumMap() {
 
   return (
     <div className="w-full">
-      <div ref={mapRef} className="h-full! min-h-[570px] w-full overflow-hidden rounded-xl" />
+      <div ref={mapRef} className="z-1 h-full! min-h-[570px] w-full overflow-hidden rounded-xl" />
     </div>
   );
 }

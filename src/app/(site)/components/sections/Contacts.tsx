@@ -52,7 +52,12 @@ export const Contacts = () => {
             <h3 className="text-sm font-bold uppercase">Социальные сети</h3>
             <p>
               Instagram:{" "}
-              <a href="https://instagram.com/TrinkoTattoo" className="text-primary hover:underline">
+              <a
+                href="https://instagram.com/trinko_tattoo"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="text-primary hover:underline"
+              >
                 @TrinkoTattoo
               </a>
             </p>

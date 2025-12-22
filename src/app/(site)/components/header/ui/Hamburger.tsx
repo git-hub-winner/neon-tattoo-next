@@ -90,7 +90,7 @@ export function Hamburger() {
                   Instagram:{" "}
                   <SheetClose asChild>
                     <a
-                      href="https://www.instagram.com/TrinkoTattoo"
+                      href="https://instagram.com/trinko_tattoo"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:underline"
