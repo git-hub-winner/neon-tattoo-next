@@ -12,7 +12,7 @@ export const Contacts = () => {
       className="flex min-h-[calc(100dvh-80px)] scroll-mt-20 flex-col gap-10 pb-10 sm:gap-15 sm:pb-20"
     >
       <div className="flex flex-col gap-10 border-t border-gray-100">
-        <div className="relative mx-auto h-[55px] w-full max-w-[350px]">
+        <div className="relative mx-auto h-13.75 w-full max-w-87.5">
           <Image
             src="/images/section-decoration.webp"
             alt=""
@@ -41,11 +41,7 @@ export const Contacts = () => {
 
           <address className="flex flex-col gap-2 not-italic">
             <h3 className="text-sm font-bold uppercase">Наша студия</h3>
-            <p>
-              Торговый центр Atrium
-              <br />
-              ул. Албишоара 4, Кишинёв
-            </p>
+            <p>ул. Тигина 65 , Кишинёв (ниже Центрального автовокзала)</p>
           </address>
 
           <div className="flex flex-col gap-2">

@@ -5,7 +5,7 @@ import "leaflet/dist/leaflet.css";
 import type L from "leaflet";
 import { useEffect, useRef } from "react";
 
-export default function AtriumMap() {
+export default function NeonMap() {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
 
@@ -30,25 +30,31 @@ export default function AtriumMap() {
 
       if (!mapRef.current || mapInstanceRef.current) return;
 
-      const atriumCoords: [number, number] = [47.0146631, 28.8558081];
+      const studioCoords: [number, number] = [47.0200287, 28.8473541];
 
-      const map = L.map(mapRef.current).setView(atriumCoords, 17);
+      const map = L.map(mapRef.current).setView(studioCoords, 17);
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
         attribution: "© OpenStreetMap contributors",
       }).addTo(map);
 
-      L.marker(atriumCoords)
+      L.marker(studioCoords)
         .addTo(map)
         .bindPopup(
           `
-          <div style="text-align: center;">
-            <strong>Neon Tattoo в Атриум</strong><br/>
-            <small>Chișinău, Strada Albişoara 4</small><br/>
-            <small>MD-2001, Молдова</small>
-          </div>
-        `
+    <a 
+      href="https://maps.app.goo.gl/teMuLJCAnjMB1xKWA" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      style="text-align: center; display: block; text-decoration: none; color: inherit;"
+    >
+      <strong>Neon Tattoo</strong><br/>
+      <small>str. Tighina 65</small><br/>
+      <small>Chișinău, MD-2001</small><br/>
+      <small style="color:#0077ff;">Open in Google Maps</small>
+    </a>
+    `
         )
         .openPopup();
 
@@ -67,7 +73,7 @@ export default function AtriumMap() {
 
   return (
     <div className="w-full">
-      <div ref={mapRef} className="z-1 h-full! min-h-[570px] w-full overflow-hidden rounded-xl" />
+      <div ref={mapRef} className="z-1 h-full! min-h-142.5 w-full overflow-hidden rounded-xl" />
     </div>
   );
 }
